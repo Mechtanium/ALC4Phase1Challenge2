@@ -16,7 +16,6 @@ import com.tech.ssylix.alc4phase1challenge2.logic.natives.fragments.HomePage
 import com.tech.ssylix.alc4phase1challenge2.logic.utilities.helpers.FirebaseDatabasePathHelper
 import com.tech.ssylix.alc4phase1challenge2.logic.utilities.helpers.FirebaseStoragePathHelper
 import com.tech.ssylix.alc4phase1challenge2.logic.viewmodel.MainViewModel
-import com.tech.ssylix.alc4phase1challenge2.presenter.DefaultRecyclerAdapter
 import com.tech.ssylix.alc4phase1challenge2.presenter.toast
 
 class FirebaseUtils {
@@ -46,7 +45,7 @@ class FirebaseUtils {
                         AuthUI.IdpConfig.EmailBuilder().build()
                     )
                 )
-                .setIsSmartLockEnabled(false)
+                //.setIsSmartLockEnabled(false)
                 .build(), INT_TAG
         )
     }

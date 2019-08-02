@@ -1,14 +1,11 @@
 package com.tech.ssylix.alc4phase1challenge2.logic.natives.fragments
 
-import android.content.Context
 import android.graphics.drawable.Drawable
-import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProviders
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -22,8 +19,6 @@ import com.tech.ssylix.alc4phase1challenge2.data.models.Deal
 import com.tech.ssylix.alc4phase1challenge2.logic.natives.activities.MainActivity
 import com.tech.ssylix.alc4phase1challenge2.logic.utilities.FirebaseUtils
 import com.tech.ssylix.alc4phase1challenge2.logic.viewmodel.MainViewModel
-import com.tech.ssylix.alc4phase1challenge2.presenter.DefaultRecyclerAdapter
-import com.tech.ssylix.alc4phase1challenge2.presenter.debugLog
 import com.tech.ssylix.alc4phase1challenge2.presenter.toast
 import kotlinx.android.synthetic.main.fragment_home_page.view.*
 import kotlinx.android.synthetic.main.model_deal_recycler.view.*
@@ -43,12 +38,10 @@ class HomePage : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        "Seeing things".debugLog()
         view?.deal_recycler!!.apply {
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
             adapter = DealRecyclerAdapter(mViewModel.mDealList)
-            mViewModel.mDealList.size.debugLog()
         }
     }
 
@@ -116,14 +109,6 @@ class HomePage : Fragment() {
         }
 
         inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-    }
-
-    override fun onDetach() {
-        super.onDetach()
     }
 
 }

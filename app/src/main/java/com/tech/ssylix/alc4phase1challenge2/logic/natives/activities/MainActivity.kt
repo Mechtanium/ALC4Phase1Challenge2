@@ -1,19 +1,17 @@
 package com.tech.ssylix.alc4phase1challenge2.logic.natives.activities
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.tech.ssylix.alc4phase1challenge2.R
 import com.tech.ssylix.alc4phase1challenge2.logic.natives.fragments.NewDestination
-import com.tech.ssylix.alc4phase1challenge2.logic.utilities.FirebaseUtils
 import com.tech.ssylix.alc4phase1challenge2.logic.viewmodel.MainViewModel
 import com.tech.ssylix.alc4phase1challenge2.presenter.toast
-
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), NewDestination.OnFragmentInteractionListener, MainViewModel.OnViewModelLoadListener {
@@ -39,7 +37,6 @@ class MainActivity : AppCompatActivity(), NewDestination.OnFragmentInteractionLi
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        FirebaseUtils.mFirebaseAuth.signOut()
         Navigation.setViewNavController(fab, findNavController(R.id.fragment))
         fab.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homePage_to_newDestination))
 
