@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "48581967413",
+    "firebase_url": "https://alc4phase1challenge2.firebaseio.com",
+    "project_id": "alc4phase1challenge2",
+    "storage_bucket": "alc4phase1challenge2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48581967413:android:41bbc28744d5c035",
+        "android_client_info": {
+          "package_name": "com.tech.ssylix.alc4phase1challenge2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48581967413-h21rrin9fvbvt63lln9mvuot6k2u5dnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.ssylix.alc4phase1challenge2",
+            "certificate_hash": "46497e4bc25f15f3e85eaac22d7c1b106a972239"
+          }
+        },
+        {
+          "client_id": "48581967413-j295sr14n9ih7h6i2ia09ce4aouvhj07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATAXolAGrsvOOCz653MebQU_hk7w9ga6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48581967413-j295sr14n9ih7h6i2ia09ce4aouvhj07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

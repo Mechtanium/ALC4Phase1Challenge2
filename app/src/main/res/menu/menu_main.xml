@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.tech.ssylix.alc4phase1challenge2.logic.natives.activities.MainActivity">
+    <item
+        android:id="@+id/action_admin_settings"
+        android:checkable="true"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:title="@string/action_admin_settings"
+        android:titleCondensed="Admin"
+        app:showAsAction="never" />
+</menu>

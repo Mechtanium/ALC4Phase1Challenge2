@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_nav_graph"
+            app:startDestination="@id/homePage">
+
+    <fragment android:id="@+id/homePage" android:name="com.tech.ssylix.alc4phase1challenge2.logic.natives.fragments.HomePage"
+              android:label="fragment_home_page" tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePage_to_newDestination"
+            app:destination="@id/newDestination" />
+    </fragment>
+    <fragment
+        android:id="@+id/newDestination"
+        android:name="com.tech.ssylix.alc4phase1challenge2.logic.natives.fragments.NewDestination"
+        android:label="fragment_new_destination"
+        tools:layout="@layout/fragment_new_destination" />
+</navigation>
